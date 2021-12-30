@@ -1,0 +1,1297 @@
+<html>
+<title>SignSynth - ASCII-Stokoe Module 2</title>
+<h3>Welcome to SignGen</h3>
+
+<P>
+
+<form method=POST action=signgen3.cgi>
+
+<table border=1 width=600>
+
+<tr><th colspan=2>Sign 1<tr><td>Dominant handshape<select name=dh1>
+<option  value=A>A
+<option  value=B>B
+<option  value=B5>B5
+<option selected value=bent-B5>Bent 5 (B5\")*
+<option  value=C>C
+<option  value=E>E
+<option  value=F>F
+<option  value=G>G
+<option  value=H>H
+<option  value=I>I
+<option  value=K>K
+<option  value=L>L
+<option  value=L3>L3
+<option  value=O>O
+<option  value=R>R
+<option  value=V>V
+<option  value=W>W
+<option  value=X>X
+<option  value=Y>Y
+<option  value=Y8>Y8
+</select><br>
+Dominant location<select name=dl1>
+<option selected value=Q>Neutral (Q)*
+<option  value=rest>Rest
+<option  value=h>Face or whole head (h)
+<option  value=u>Upper face, forehead (u)
+<option  value=m>Mid-face, eye, nose (m)
+<option  value=l>Lower face, chin (l)
+<option  value=c>Cheek/temple/ear (c)
+<option  value=k>Neck (k)
+<option  value=[>Torso ([)
+<option  value=i>Nondominant upper arm (i)
+<option  value=j>Nondominant lower arm (j)
+<option  value=as>Nondominant wrist (a/s)
+</select><br>
+Dominant orientation<select name=do1>
+<option selected value=f selected>Away from signer (f)*
+<option  value=t>Towards signer (t)
+<option  value=lt>Towards non-dominant side (&lt)
+<option  value=gt>Towards dominant side (&gt)
+<option  value=^>Upwards (^)
+<option  value=v>Downwards (v)
+</select><br>
+<td>Non-dominant handshape<select name=nh1>
+<option  value=\"A\">A
+<option  value=\"B\">B
+<option  value=B5>B5
+<option selected value=bent-B5>Bent 5 (B5\")*
+<option  value=C>C
+<option  value=E>E
+<option  value=F>F
+<option  value=G>G
+<option  value=H>H
+<option  value=I>I
+<option  value=K>K
+<option  value=L>L
+<option  value=L3>L3
+<option  value=O>O
+<option  value=R>R
+<option  value=V>V
+<option  value=W>W
+<option  value=X>X
+<option  value=Y>Y
+<option  value=Y8>Y8
+</select><br>
+Non-dominant location<select name=nl1>
+<option selected value=rest>Rest*
+<option  value=Q>Neutral (Q)
+<option  value=h>Face or whole head (h)
+<option  value=u>Upper face, forehead (u)
+<option  value=m>Mid-face, eye, nose (m)
+<option  value=l>Lower face, chin (l)
+<option  value=c>Cheek/temple/ear (c)
+<option  value=k>Neck (k)
+<option  value=[>Torso ([)
+<option  value=above>Above dominant (-)
+<option  value=below>Below dominant (_)
+<option  value=side>Side of dominant (')
+<option  value=d>Behind dominant (d)
+<option  value=q>Front of dominant (q)
+<option  value=as>Dominant wrist (a/s)
+</select><br>
+Non-dominant orientation<select name=no1>
+<option selected value=f selected>Away from signer (f)*
+<option  value=t>Towards signer (t)
+<option  value=lt>Towards non-dominant side (&lt)
+<option  value=gt>Towards dominant side (&gt)
+<option  value=^>Upwards (^)
+<option  value=v>Downwards (v)
+</select><br>
+<tr><td>Eyelids<select name=Xi1>
+<option selected value=y>Open (y)*
+<option  value=r>Squint (r)
+<option  value=l>Closed (l)
+</select><br>
+Eyebrows<select name=Xb1>
+<option selected value=t>Middle (d)*
+<option  value=p>Up (b)
+<option  value=k>Down (g)
+</select><br>
+Eyes<select name=Xe1>
+<option selected value=A>Forward (a)*
+<option  value=o>Left (o)
+<option  value=e>Right (e)
+<option  value=i>Up (i)
+<option  value=u>Down (u)
+<option  value=uo>Down Left (uo)
+<option  value=ue>Down Right (ue)
+<option  value=io>Up Left (io)
+<option  value=ie>Up Right (ie)
+</select><br>
+Mouth<select name=Xm1>
+<option selected value=n>Neutral (n)*
+<option  value=x>cs-right (x)
+<option  value=l>cs-left (j)
+<option  value=m>mm (m)
+<option  value=w>oo (w)
+<option  value=th>th (t)
+<option  value=c>cha (c)
+<option  value=s>smile (s)
+</select><br>
+<td>Head<select name=Ys1>
+<option selected value=c>Center (c)*
+<option  value=p>Right (p)
+<option  value=k>Left (k)
+<option  value=t>Up (t)
+<option  value=d>Down (d)
+<option  value=b>Tilt Right (b)
+<option  value=g>Tilt Left (g)
+</select><br>
+Neck<select name=Yk1>
+<option selected value=s>Middle (s)*
+<option  value=f>Forward (f)
+<option  value=h>Back (h)
+</select><br>
+Torso<select name=Yt1>
+<option selected value=a>Center (a)*
+<option  value=o>Left (o)
+<option  value=e>Right (e)
+<option  value=i>Forward (i)
+<option  value=u>Back (u)
+<option  value=io>Forward left (io)
+<option  value=ie>Forward right (ie)
+<option  value=uo>Back left (uo)
+<option  value=ue>Back right (ue)
+</select><br>
+Time Between Holds<select name=Tm1>
+<option  value=p>0.05 (p)
+<option  value=t>0.11 (t)
+<option selected value=c>1.00 (c)*
+<option  value=k>1.33 (k)
+<option  value=q>1.67 (q)
+</select><br>
+Length of Hold<select name=Th1>
+<option  value=m>0.15 (m)
+<option selected value=n>0.50 (n)*
+<option  value=g>0.75 (g)
+<option  value=h>1.00 (h)
+</select><br>
+<tr><th colspan=2>Sign 2<tr><td>Dominant handshape<select name=dh2>
+<option  value=A>A
+<option  value=B>B
+<option  value=B5>B5
+<option selected value=bent-B5>Bent 5 (B5\")*
+<option  value=C>C
+<option  value=E>E
+<option  value=F>F
+<option  value=G>G
+<option  value=H>H
+<option  value=I>I
+<option  value=K>K
+<option  value=L>L
+<option  value=L3>L3
+<option  value=O>O
+<option  value=R>R
+<option  value=V>V
+<option  value=W>W
+<option  value=X>X
+<option  value=Y>Y
+<option  value=Y8>Y8
+</select><br>
+Dominant location<select name=dl2>
+<option selected value=Q>Neutral (Q)*
+<option  value=rest>Rest
+<option  value=h>Face or whole head (h)
+<option  value=u>Upper face, forehead (u)
+<option  value=m>Mid-face, eye, nose (m)
+<option  value=l>Lower face, chin (l)
+<option  value=c>Cheek/temple/ear (c)
+<option  value=k>Neck (k)
+<option  value=[>Torso ([)
+<option  value=i>Nondominant upper arm (i)
+<option  value=j>Nondominant lower arm (j)
+<option  value=as>Nondominant wrist (a/s)
+</select><br>
+Dominant orientation<select name=do2>
+<option selected value=f selected>Away from signer (f)*
+<option  value=t>Towards signer (t)
+<option  value=lt>Towards non-dominant side (&lt)
+<option  value=gt>Towards dominant side (&gt)
+<option  value=^>Upwards (^)
+<option  value=v>Downwards (v)
+</select><br>
+<td>Non-dominant handshape<select name=nh2>
+<option  value=\"A\">A
+<option  value=\"B\">B
+<option  value=B5>B5
+<option selected value=bent-B5>Bent 5 (B5\")*
+<option  value=C>C
+<option  value=E>E
+<option  value=F>F
+<option  value=G>G
+<option  value=H>H
+<option  value=I>I
+<option  value=K>K
+<option  value=L>L
+<option  value=L3>L3
+<option  value=O>O
+<option  value=R>R
+<option  value=V>V
+<option  value=W>W
+<option  value=X>X
+<option  value=Y>Y
+<option  value=Y8>Y8
+</select><br>
+Non-dominant location<select name=nl2>
+<option selected value=rest>Rest*
+<option  value=Q>Neutral (Q)
+<option  value=h>Face or whole head (h)
+<option  value=u>Upper face, forehead (u)
+<option  value=m>Mid-face, eye, nose (m)
+<option  value=l>Lower face, chin (l)
+<option  value=c>Cheek/temple/ear (c)
+<option  value=k>Neck (k)
+<option  value=[>Torso ([)
+<option  value=above>Above dominant (-)
+<option  value=below>Below dominant (_)
+<option  value=side>Side of dominant (')
+<option  value=d>Behind dominant (d)
+<option  value=q>Front of dominant (q)
+<option  value=as>Dominant wrist (a/s)
+</select><br>
+Non-dominant orientation<select name=no2>
+<option selected value=f selected>Away from signer (f)*
+<option  value=t>Towards signer (t)
+<option  value=lt>Towards non-dominant side (&lt)
+<option  value=gt>Towards dominant side (&gt)
+<option  value=^>Upwards (^)
+<option  value=v>Downwards (v)
+</select><br>
+<tr><td>Eyelids<select name=Xi2>
+<option selected value=y>Open (y)*
+<option  value=r>Squint (r)
+<option  value=l>Closed (l)
+</select><br>
+Eyebrows<select name=Xb2>
+<option selected value=t>Middle (d)*
+<option  value=p>Up (b)
+<option  value=k>Down (g)
+</select><br>
+Eyes<select name=Xe2>
+<option selected value=A>Forward (a)*
+<option  value=o>Left (o)
+<option  value=e>Right (e)
+<option  value=i>Up (i)
+<option  value=u>Down (u)
+<option  value=uo>Down Left (uo)
+<option  value=ue>Down Right (ue)
+<option  value=io>Up Left (io)
+<option  value=ie>Up Right (ie)
+</select><br>
+Mouth<select name=Xm2>
+<option selected value=n>Neutral (n)*
+<option  value=x>cs-right (x)
+<option  value=l>cs-left (j)
+<option  value=m>mm (m)
+<option  value=w>oo (w)
+<option  value=th>th (t)
+<option  value=c>cha (c)
+<option  value=s>smile (s)
+</select><br>
+<td>Head<select name=Ys2>
+<option selected value=c>Center (c)*
+<option  value=p>Right (p)
+<option  value=k>Left (k)
+<option  value=t>Up (t)
+<option  value=d>Down (d)
+<option  value=b>Tilt Right (b)
+<option  value=g>Tilt Left (g)
+</select><br>
+Neck<select name=Yk2>
+<option selected value=s>Middle (s)*
+<option  value=f>Forward (f)
+<option  value=h>Back (h)
+</select><br>
+Torso<select name=Yt2>
+<option selected value=a>Center (a)*
+<option  value=o>Left (o)
+<option  value=e>Right (e)
+<option  value=i>Forward (i)
+<option  value=u>Back (u)
+<option  value=io>Forward left (io)
+<option  value=ie>Forward right (ie)
+<option  value=uo>Back left (uo)
+<option  value=ue>Back right (ue)
+</select><br>
+Time Between Holds<select name=Tm2>
+<option  value=p>0.05 (p)
+<option  value=t>0.11 (t)
+<option selected value=c>1.00 (c)*
+<option  value=k>1.33 (k)
+<option  value=q>1.67 (q)
+</select><br>
+Length of Hold<select name=Th2>
+<option  value=m>0.15 (m)
+<option selected value=n>0.50 (n)*
+<option  value=g>0.75 (g)
+<option  value=h>1.00 (h)
+</select><br>
+<tr><th colspan=2>Sign 3<tr><td>Dominant handshape<select name=dh3>
+<option  value=A>A
+<option  value=B>B
+<option  value=B5>B5
+<option selected value=bent-B5>Bent 5 (B5\")*
+<option  value=C>C
+<option  value=E>E
+<option  value=F>F
+<option  value=G>G
+<option  value=H>H
+<option  value=I>I
+<option  value=K>K
+<option  value=L>L
+<option  value=L3>L3
+<option  value=O>O
+<option  value=R>R
+<option  value=V>V
+<option  value=W>W
+<option  value=X>X
+<option  value=Y>Y
+<option  value=Y8>Y8
+</select><br>
+Dominant location<select name=dl3>
+<option selected value=Q>Neutral (Q)*
+<option  value=rest>Rest
+<option  value=h>Face or whole head (h)
+<option  value=u>Upper face, forehead (u)
+<option  value=m>Mid-face, eye, nose (m)
+<option  value=l>Lower face, chin (l)
+<option  value=c>Cheek/temple/ear (c)
+<option  value=k>Neck (k)
+<option  value=[>Torso ([)
+<option  value=i>Nondominant upper arm (i)
+<option  value=j>Nondominant lower arm (j)
+<option  value=as>Nondominant wrist (a/s)
+</select><br>
+Dominant orientation<select name=do3>
+<option selected value=f selected>Away from signer (f)*
+<option  value=t>Towards signer (t)
+<option  value=lt>Towards non-dominant side (&lt)
+<option  value=gt>Towards dominant side (&gt)
+<option  value=^>Upwards (^)
+<option  value=v>Downwards (v)
+</select><br>
+<td>Non-dominant handshape<select name=nh3>
+<option  value=\"A\">A
+<option  value=\"B\">B
+<option  value=B5>B5
+<option selected value=bent-B5>Bent 5 (B5\")*
+<option  value=C>C
+<option  value=E>E
+<option  value=F>F
+<option  value=G>G
+<option  value=H>H
+<option  value=I>I
+<option  value=K>K
+<option  value=L>L
+<option  value=L3>L3
+<option  value=O>O
+<option  value=R>R
+<option  value=V>V
+<option  value=W>W
+<option  value=X>X
+<option  value=Y>Y
+<option  value=Y8>Y8
+</select><br>
+Non-dominant location<select name=nl3>
+<option selected value=rest>Rest*
+<option  value=Q>Neutral (Q)
+<option  value=h>Face or whole head (h)
+<option  value=u>Upper face, forehead (u)
+<option  value=m>Mid-face, eye, nose (m)
+<option  value=l>Lower face, chin (l)
+<option  value=c>Cheek/temple/ear (c)
+<option  value=k>Neck (k)
+<option  value=[>Torso ([)
+<option  value=above>Above dominant (-)
+<option  value=below>Below dominant (_)
+<option  value=side>Side of dominant (')
+<option  value=d>Behind dominant (d)
+<option  value=q>Front of dominant (q)
+<option  value=as>Dominant wrist (a/s)
+</select><br>
+Non-dominant orientation<select name=no3>
+<option selected value=f selected>Away from signer (f)*
+<option  value=t>Towards signer (t)
+<option  value=lt>Towards non-dominant side (&lt)
+<option  value=gt>Towards dominant side (&gt)
+<option  value=^>Upwards (^)
+<option  value=v>Downwards (v)
+</select><br>
+<tr><td>Eyelids<select name=Xi3>
+<option selected value=y>Open (y)*
+<option  value=r>Squint (r)
+<option  value=l>Closed (l)
+</select><br>
+Eyebrows<select name=Xb3>
+<option selected value=t>Middle (d)*
+<option  value=p>Up (b)
+<option  value=k>Down (g)
+</select><br>
+Eyes<select name=Xe3>
+<option selected value=A>Forward (a)*
+<option  value=o>Left (o)
+<option  value=e>Right (e)
+<option  value=i>Up (i)
+<option  value=u>Down (u)
+<option  value=uo>Down Left (uo)
+<option  value=ue>Down Right (ue)
+<option  value=io>Up Left (io)
+<option  value=ie>Up Right (ie)
+</select><br>
+Mouth<select name=Xm3>
+<option selected value=n>Neutral (n)*
+<option  value=x>cs-right (x)
+<option  value=l>cs-left (j)
+<option  value=m>mm (m)
+<option  value=w>oo (w)
+<option  value=th>th (t)
+<option  value=c>cha (c)
+<option  value=s>smile (s)
+</select><br>
+<td>Head<select name=Ys3>
+<option selected value=c>Center (c)*
+<option  value=p>Right (p)
+<option  value=k>Left (k)
+<option  value=t>Up (t)
+<option  value=d>Down (d)
+<option  value=b>Tilt Right (b)
+<option  value=g>Tilt Left (g)
+</select><br>
+Neck<select name=Yk3>
+<option selected value=s>Middle (s)*
+<option  value=f>Forward (f)
+<option  value=h>Back (h)
+</select><br>
+Torso<select name=Yt3>
+<option selected value=a>Center (a)*
+<option  value=o>Left (o)
+<option  value=e>Right (e)
+<option  value=i>Forward (i)
+<option  value=u>Back (u)
+<option  value=io>Forward left (io)
+<option  value=ie>Forward right (ie)
+<option  value=uo>Back left (uo)
+<option  value=ue>Back right (ue)
+</select><br>
+Time Between Holds<select name=Tm3>
+<option  value=p>0.05 (p)
+<option  value=t>0.11 (t)
+<option selected value=c>1.00 (c)*
+<option  value=k>1.33 (k)
+<option  value=q>1.67 (q)
+</select><br>
+Length of Hold<select name=Th3>
+<option  value=m>0.15 (m)
+<option selected value=n>0.50 (n)*
+<option  value=g>0.75 (g)
+<option  value=h>1.00 (h)
+</select><br>
+<tr><th colspan=2>Sign 4<tr><td>Dominant handshape<select name=dh4>
+<option  value=A>A
+<option  value=B>B
+<option  value=B5>B5
+<option selected value=bent-B5>Bent 5 (B5\")*
+<option  value=C>C
+<option  value=E>E
+<option  value=F>F
+<option  value=G>G
+<option  value=H>H
+<option  value=I>I
+<option  value=K>K
+<option  value=L>L
+<option  value=L3>L3
+<option  value=O>O
+<option  value=R>R
+<option  value=V>V
+<option  value=W>W
+<option  value=X>X
+<option  value=Y>Y
+<option  value=Y8>Y8
+</select><br>
+Dominant location<select name=dl4>
+<option selected value=Q>Neutral (Q)*
+<option  value=rest>Rest
+<option  value=h>Face or whole head (h)
+<option  value=u>Upper face, forehead (u)
+<option  value=m>Mid-face, eye, nose (m)
+<option  value=l>Lower face, chin (l)
+<option  value=c>Cheek/temple/ear (c)
+<option  value=k>Neck (k)
+<option  value=[>Torso ([)
+<option  value=i>Nondominant upper arm (i)
+<option  value=j>Nondominant lower arm (j)
+<option  value=as>Nondominant wrist (a/s)
+</select><br>
+Dominant orientation<select name=do4>
+<option selected value=f selected>Away from signer (f)*
+<option  value=t>Towards signer (t)
+<option  value=lt>Towards non-dominant side (&lt)
+<option  value=gt>Towards dominant side (&gt)
+<option  value=^>Upwards (^)
+<option  value=v>Downwards (v)
+</select><br>
+<td>Non-dominant handshape<select name=nh4>
+<option  value=\"A\">A
+<option  value=\"B\">B
+<option  value=B5>B5
+<option selected value=bent-B5>Bent 5 (B5\")*
+<option  value=C>C
+<option  value=E>E
+<option  value=F>F
+<option  value=G>G
+<option  value=H>H
+<option  value=I>I
+<option  value=K>K
+<option  value=L>L
+<option  value=L3>L3
+<option  value=O>O
+<option  value=R>R
+<option  value=V>V
+<option  value=W>W
+<option  value=X>X
+<option  value=Y>Y
+<option  value=Y8>Y8
+</select><br>
+Non-dominant location<select name=nl4>
+<option selected value=rest>Rest*
+<option  value=Q>Neutral (Q)
+<option  value=h>Face or whole head (h)
+<option  value=u>Upper face, forehead (u)
+<option  value=m>Mid-face, eye, nose (m)
+<option  value=l>Lower face, chin (l)
+<option  value=c>Cheek/temple/ear (c)
+<option  value=k>Neck (k)
+<option  value=[>Torso ([)
+<option  value=above>Above dominant (-)
+<option  value=below>Below dominant (_)
+<option  value=side>Side of dominant (')
+<option  value=d>Behind dominant (d)
+<option  value=q>Front of dominant (q)
+<option  value=as>Dominant wrist (a/s)
+</select><br>
+Non-dominant orientation<select name=no4>
+<option selected value=f selected>Away from signer (f)*
+<option  value=t>Towards signer (t)
+<option  value=lt>Towards non-dominant side (&lt)
+<option  value=gt>Towards dominant side (&gt)
+<option  value=^>Upwards (^)
+<option  value=v>Downwards (v)
+</select><br>
+<tr><td>Eyelids<select name=Xi4>
+<option selected value=y>Open (y)*
+<option  value=r>Squint (r)
+<option  value=l>Closed (l)
+</select><br>
+Eyebrows<select name=Xb4>
+<option selected value=t>Middle (d)*
+<option  value=p>Up (b)
+<option  value=k>Down (g)
+</select><br>
+Eyes<select name=Xe4>
+<option selected value=A>Forward (a)*
+<option  value=o>Left (o)
+<option  value=e>Right (e)
+<option  value=i>Up (i)
+<option  value=u>Down (u)
+<option  value=uo>Down Left (uo)
+<option  value=ue>Down Right (ue)
+<option  value=io>Up Left (io)
+<option  value=ie>Up Right (ie)
+</select><br>
+Mouth<select name=Xm4>
+<option selected value=n>Neutral (n)*
+<option  value=x>cs-right (x)
+<option  value=l>cs-left (j)
+<option  value=m>mm (m)
+<option  value=w>oo (w)
+<option  value=th>th (t)
+<option  value=c>cha (c)
+<option  value=s>smile (s)
+</select><br>
+<td>Head<select name=Ys4>
+<option selected value=c>Center (c)*
+<option  value=p>Right (p)
+<option  value=k>Left (k)
+<option  value=t>Up (t)
+<option  value=d>Down (d)
+<option  value=b>Tilt Right (b)
+<option  value=g>Tilt Left (g)
+</select><br>
+Neck<select name=Yk4>
+<option selected value=s>Middle (s)*
+<option  value=f>Forward (f)
+<option  value=h>Back (h)
+</select><br>
+Torso<select name=Yt4>
+<option selected value=a>Center (a)*
+<option  value=o>Left (o)
+<option  value=e>Right (e)
+<option  value=i>Forward (i)
+<option  value=u>Back (u)
+<option  value=io>Forward left (io)
+<option  value=ie>Forward right (ie)
+<option  value=uo>Back left (uo)
+<option  value=ue>Back right (ue)
+</select><br>
+Time Between Holds<select name=Tm4>
+<option  value=p>0.05 (p)
+<option  value=t>0.11 (t)
+<option selected value=c>1.00 (c)*
+<option  value=k>1.33 (k)
+<option  value=q>1.67 (q)
+</select><br>
+Length of Hold<select name=Th4>
+<option  value=m>0.15 (m)
+<option selected value=n>0.50 (n)*
+<option  value=g>0.75 (g)
+<option  value=h>1.00 (h)
+</select><br>
+<tr><th colspan=2>Sign 5<tr><td>Dominant handshape<select name=dh5>
+<option  value=A>A
+<option  value=B>B
+<option  value=B5>B5
+<option selected value=bent-B5>Bent 5 (B5\")*
+<option  value=C>C
+<option  value=E>E
+<option  value=F>F
+<option  value=G>G
+<option  value=H>H
+<option  value=I>I
+<option  value=K>K
+<option  value=L>L
+<option  value=L3>L3
+<option  value=O>O
+<option  value=R>R
+<option  value=V>V
+<option  value=W>W
+<option  value=X>X
+<option  value=Y>Y
+<option  value=Y8>Y8
+</select><br>
+Dominant location<select name=dl5>
+<option selected value=Q>Neutral (Q)*
+<option  value=rest>Rest
+<option  value=h>Face or whole head (h)
+<option  value=u>Upper face, forehead (u)
+<option  value=m>Mid-face, eye, nose (m)
+<option  value=l>Lower face, chin (l)
+<option  value=c>Cheek/temple/ear (c)
+<option  value=k>Neck (k)
+<option  value=[>Torso ([)
+<option  value=i>Nondominant upper arm (i)
+<option  value=j>Nondominant lower arm (j)
+<option  value=as>Nondominant wrist (a/s)
+</select><br>
+Dominant orientation<select name=do5>
+<option selected value=f selected>Away from signer (f)*
+<option  value=t>Towards signer (t)
+<option  value=lt>Towards non-dominant side (&lt)
+<option  value=gt>Towards dominant side (&gt)
+<option  value=^>Upwards (^)
+<option  value=v>Downwards (v)
+</select><br>
+<td>Non-dominant handshape<select name=nh5>
+<option  value=\"A\">A
+<option  value=\"B\">B
+<option  value=B5>B5
+<option selected value=bent-B5>Bent 5 (B5\")*
+<option  value=C>C
+<option  value=E>E
+<option  value=F>F
+<option  value=G>G
+<option  value=H>H
+<option  value=I>I
+<option  value=K>K
+<option  value=L>L
+<option  value=L3>L3
+<option  value=O>O
+<option  value=R>R
+<option  value=V>V
+<option  value=W>W
+<option  value=X>X
+<option  value=Y>Y
+<option  value=Y8>Y8
+</select><br>
+Non-dominant location<select name=nl5>
+<option selected value=rest>Rest*
+<option  value=Q>Neutral (Q)
+<option  value=h>Face or whole head (h)
+<option  value=u>Upper face, forehead (u)
+<option  value=m>Mid-face, eye, nose (m)
+<option  value=l>Lower face, chin (l)
+<option  value=c>Cheek/temple/ear (c)
+<option  value=k>Neck (k)
+<option  value=[>Torso ([)
+<option  value=above>Above dominant (-)
+<option  value=below>Below dominant (_)
+<option  value=side>Side of dominant (')
+<option  value=d>Behind dominant (d)
+<option  value=q>Front of dominant (q)
+<option  value=as>Dominant wrist (a/s)
+</select><br>
+Non-dominant orientation<select name=no5>
+<option selected value=f selected>Away from signer (f)*
+<option  value=t>Towards signer (t)
+<option  value=lt>Towards non-dominant side (&lt)
+<option  value=gt>Towards dominant side (&gt)
+<option  value=^>Upwards (^)
+<option  value=v>Downwards (v)
+</select><br>
+<tr><td>Eyelids<select name=Xi5>
+<option selected value=y>Open (y)*
+<option  value=r>Squint (r)
+<option  value=l>Closed (l)
+</select><br>
+Eyebrows<select name=Xb5>
+<option selected value=t>Middle (d)*
+<option  value=p>Up (b)
+<option  value=k>Down (g)
+</select><br>
+Eyes<select name=Xe5>
+<option selected value=A>Forward (a)*
+<option  value=o>Left (o)
+<option  value=e>Right (e)
+<option  value=i>Up (i)
+<option  value=u>Down (u)
+<option  value=uo>Down Left (uo)
+<option  value=ue>Down Right (ue)
+<option  value=io>Up Left (io)
+<option  value=ie>Up Right (ie)
+</select><br>
+Mouth<select name=Xm5>
+<option selected value=n>Neutral (n)*
+<option  value=x>cs-right (x)
+<option  value=l>cs-left (j)
+<option  value=m>mm (m)
+<option  value=w>oo (w)
+<option  value=th>th (t)
+<option  value=c>cha (c)
+<option  value=s>smile (s)
+</select><br>
+<td>Head<select name=Ys5>
+<option selected value=c>Center (c)*
+<option  value=p>Right (p)
+<option  value=k>Left (k)
+<option  value=t>Up (t)
+<option  value=d>Down (d)
+<option  value=b>Tilt Right (b)
+<option  value=g>Tilt Left (g)
+</select><br>
+Neck<select name=Yk5>
+<option selected value=s>Middle (s)*
+<option  value=f>Forward (f)
+<option  value=h>Back (h)
+</select><br>
+Torso<select name=Yt5>
+<option selected value=a>Center (a)*
+<option  value=o>Left (o)
+<option  value=e>Right (e)
+<option  value=i>Forward (i)
+<option  value=u>Back (u)
+<option  value=io>Forward left (io)
+<option  value=ie>Forward right (ie)
+<option  value=uo>Back left (uo)
+<option  value=ue>Back right (ue)
+</select><br>
+Time Between Holds<select name=Tm5>
+<option  value=p>0.05 (p)
+<option  value=t>0.11 (t)
+<option selected value=c>1.00 (c)*
+<option  value=k>1.33 (k)
+<option  value=q>1.67 (q)
+</select><br>
+Length of Hold<select name=Th5>
+<option  value=m>0.15 (m)
+<option selected value=n>0.50 (n)*
+<option  value=g>0.75 (g)
+<option  value=h>1.00 (h)
+</select><br>
+<tr><th colspan=2>Sign 6<tr><td>Dominant handshape<select name=dh6>
+<option  value=A>A
+<option  value=B>B
+<option  value=B5>B5
+<option selected value=bent-B5>Bent 5 (B5\")*
+<option  value=C>C
+<option  value=E>E
+<option  value=F>F
+<option  value=G>G
+<option  value=H>H
+<option  value=I>I
+<option  value=K>K
+<option  value=L>L
+<option  value=L3>L3
+<option  value=O>O
+<option  value=R>R
+<option  value=V>V
+<option  value=W>W
+<option  value=X>X
+<option  value=Y>Y
+<option  value=Y8>Y8
+</select><br>
+Dominant location<select name=dl6>
+<option selected value=Q>Neutral (Q)*
+<option  value=rest>Rest
+<option  value=h>Face or whole head (h)
+<option  value=u>Upper face, forehead (u)
+<option  value=m>Mid-face, eye, nose (m)
+<option  value=l>Lower face, chin (l)
+<option  value=c>Cheek/temple/ear (c)
+<option  value=k>Neck (k)
+<option  value=[>Torso ([)
+<option  value=i>Nondominant upper arm (i)
+<option  value=j>Nondominant lower arm (j)
+<option  value=as>Nondominant wrist (a/s)
+</select><br>
+Dominant orientation<select name=do6>
+<option selected value=f selected>Away from signer (f)*
+<option  value=t>Towards signer (t)
+<option  value=lt>Towards non-dominant side (&lt)
+<option  value=gt>Towards dominant side (&gt)
+<option  value=^>Upwards (^)
+<option  value=v>Downwards (v)
+</select><br>
+<td>Non-dominant handshape<select name=nh6>
+<option  value=\"A\">A
+<option  value=\"B\">B
+<option  value=B5>B5
+<option selected value=bent-B5>Bent 5 (B5\")*
+<option  value=C>C
+<option  value=E>E
+<option  value=F>F
+<option  value=G>G
+<option  value=H>H
+<option  value=I>I
+<option  value=K>K
+<option  value=L>L
+<option  value=L3>L3
+<option  value=O>O
+<option  value=R>R
+<option  value=V>V
+<option  value=W>W
+<option  value=X>X
+<option  value=Y>Y
+<option  value=Y8>Y8
+</select><br>
+Non-dominant location<select name=nl6>
+<option selected value=rest>Rest*
+<option  value=Q>Neutral (Q)
+<option  value=h>Face or whole head (h)
+<option  value=u>Upper face, forehead (u)
+<option  value=m>Mid-face, eye, nose (m)
+<option  value=l>Lower face, chin (l)
+<option  value=c>Cheek/temple/ear (c)
+<option  value=k>Neck (k)
+<option  value=[>Torso ([)
+<option  value=above>Above dominant (-)
+<option  value=below>Below dominant (_)
+<option  value=side>Side of dominant (')
+<option  value=d>Behind dominant (d)
+<option  value=q>Front of dominant (q)
+<option  value=as>Dominant wrist (a/s)
+</select><br>
+Non-dominant orientation<select name=no6>
+<option selected value=f selected>Away from signer (f)*
+<option  value=t>Towards signer (t)
+<option  value=lt>Towards non-dominant side (&lt)
+<option  value=gt>Towards dominant side (&gt)
+<option  value=^>Upwards (^)
+<option  value=v>Downwards (v)
+</select><br>
+<tr><td>Eyelids<select name=Xi6>
+<option selected value=y>Open (y)*
+<option  value=r>Squint (r)
+<option  value=l>Closed (l)
+</select><br>
+Eyebrows<select name=Xb6>
+<option selected value=t>Middle (d)*
+<option  value=p>Up (b)
+<option  value=k>Down (g)
+</select><br>
+Eyes<select name=Xe6>
+<option selected value=A>Forward (a)*
+<option  value=o>Left (o)
+<option  value=e>Right (e)
+<option  value=i>Up (i)
+<option  value=u>Down (u)
+<option  value=uo>Down Left (uo)
+<option  value=ue>Down Right (ue)
+<option  value=io>Up Left (io)
+<option  value=ie>Up Right (ie)
+</select><br>
+Mouth<select name=Xm6>
+<option selected value=n>Neutral (n)*
+<option  value=x>cs-right (x)
+<option  value=l>cs-left (j)
+<option  value=m>mm (m)
+<option  value=w>oo (w)
+<option  value=th>th (t)
+<option  value=c>cha (c)
+<option  value=s>smile (s)
+</select><br>
+<td>Head<select name=Ys6>
+<option selected value=c>Center (c)*
+<option  value=p>Right (p)
+<option  value=k>Left (k)
+<option  value=t>Up (t)
+<option  value=d>Down (d)
+<option  value=b>Tilt Right (b)
+<option  value=g>Tilt Left (g)
+</select><br>
+Neck<select name=Yk6>
+<option selected value=s>Middle (s)*
+<option  value=f>Forward (f)
+<option  value=h>Back (h)
+</select><br>
+Torso<select name=Yt6>
+<option selected value=a>Center (a)*
+<option  value=o>Left (o)
+<option  value=e>Right (e)
+<option  value=i>Forward (i)
+<option  value=u>Back (u)
+<option  value=io>Forward left (io)
+<option  value=ie>Forward right (ie)
+<option  value=uo>Back left (uo)
+<option  value=ue>Back right (ue)
+</select><br>
+Time Between Holds<select name=Tm6>
+<option  value=p>0.05 (p)
+<option  value=t>0.11 (t)
+<option selected value=c>1.00 (c)*
+<option  value=k>1.33 (k)
+<option  value=q>1.67 (q)
+</select><br>
+Length of Hold<select name=Th6>
+<option  value=m>0.15 (m)
+<option selected value=n>0.50 (n)*
+<option  value=g>0.75 (g)
+<option  value=h>1.00 (h)
+</select><br>
+<tr><th colspan=2>Sign 7<tr><td>Dominant handshape<select name=dh7>
+<option  value=A>A
+<option  value=B>B
+<option  value=B5>B5
+<option selected value=bent-B5>Bent 5 (B5\")*
+<option  value=C>C
+<option  value=E>E
+<option  value=F>F
+<option  value=G>G
+<option  value=H>H
+<option  value=I>I
+<option  value=K>K
+<option  value=L>L
+<option  value=L3>L3
+<option  value=O>O
+<option  value=R>R
+<option  value=V>V
+<option  value=W>W
+<option  value=X>X
+<option  value=Y>Y
+<option  value=Y8>Y8
+</select><br>
+Dominant location<select name=dl7>
+<option selected value=Q>Neutral (Q)*
+<option  value=rest>Rest
+<option  value=h>Face or whole head (h)
+<option  value=u>Upper face, forehead (u)
+<option  value=m>Mid-face, eye, nose (m)
+<option  value=l>Lower face, chin (l)
+<option  value=c>Cheek/temple/ear (c)
+<option  value=k>Neck (k)
+<option  value=[>Torso ([)
+<option  value=i>Nondominant upper arm (i)
+<option  value=j>Nondominant lower arm (j)
+<option  value=as>Nondominant wrist (a/s)
+</select><br>
+Dominant orientation<select name=do7>
+<option selected value=f selected>Away from signer (f)*
+<option  value=t>Towards signer (t)
+<option  value=lt>Towards non-dominant side (&lt)
+<option  value=gt>Towards dominant side (&gt)
+<option  value=^>Upwards (^)
+<option  value=v>Downwards (v)
+</select><br>
+<td>Non-dominant handshape<select name=nh7>
+<option  value=\"A\">A
+<option  value=\"B\">B
+<option  value=B5>B5
+<option selected value=bent-B5>Bent 5 (B5\")*
+<option  value=C>C
+<option  value=E>E
+<option  value=F>F
+<option  value=G>G
+<option  value=H>H
+<option  value=I>I
+<option  value=K>K
+<option  value=L>L
+<option  value=L3>L3
+<option  value=O>O
+<option  value=R>R
+<option  value=V>V
+<option  value=W>W
+<option  value=X>X
+<option  value=Y>Y
+<option  value=Y8>Y8
+</select><br>
+Non-dominant location<select name=nl7>
+<option selected value=rest>Rest*
+<option  value=Q>Neutral (Q)
+<option  value=h>Face or whole head (h)
+<option  value=u>Upper face, forehead (u)
+<option  value=m>Mid-face, eye, nose (m)
+<option  value=l>Lower face, chin (l)
+<option  value=c>Cheek/temple/ear (c)
+<option  value=k>Neck (k)
+<option  value=[>Torso ([)
+<option  value=above>Above dominant (-)
+<option  value=below>Below dominant (_)
+<option  value=side>Side of dominant (')
+<option  value=d>Behind dominant (d)
+<option  value=q>Front of dominant (q)
+<option  value=as>Dominant wrist (a/s)
+</select><br>
+Non-dominant orientation<select name=no7>
+<option selected value=f selected>Away from signer (f)*
+<option  value=t>Towards signer (t)
+<option  value=lt>Towards non-dominant side (&lt)
+<option  value=gt>Towards dominant side (&gt)
+<option  value=^>Upwards (^)
+<option  value=v>Downwards (v)
+</select><br>
+<tr><td>Eyelids<select name=Xi7>
+<option selected value=y>Open (y)*
+<option  value=r>Squint (r)
+<option  value=l>Closed (l)
+</select><br>
+Eyebrows<select name=Xb7>
+<option selected value=t>Middle (d)*
+<option  value=p>Up (b)
+<option  value=k>Down (g)
+</select><br>
+Eyes<select name=Xe7>
+<option selected value=A>Forward (a)*
+<option  value=o>Left (o)
+<option  value=e>Right (e)
+<option  value=i>Up (i)
+<option  value=u>Down (u)
+<option  value=uo>Down Left (uo)
+<option  value=ue>Down Right (ue)
+<option  value=io>Up Left (io)
+<option  value=ie>Up Right (ie)
+</select><br>
+Mouth<select name=Xm7>
+<option selected value=n>Neutral (n)*
+<option  value=x>cs-right (x)
+<option  value=l>cs-left (j)
+<option  value=m>mm (m)
+<option  value=w>oo (w)
+<option  value=th>th (t)
+<option  value=c>cha (c)
+<option  value=s>smile (s)
+</select><br>
+<td>Head<select name=Ys7>
+<option selected value=c>Center (c)*
+<option  value=p>Right (p)
+<option  value=k>Left (k)
+<option  value=t>Up (t)
+<option  value=d>Down (d)
+<option  value=b>Tilt Right (b)
+<option  value=g>Tilt Left (g)
+</select><br>
+Neck<select name=Yk7>
+<option selected value=s>Middle (s)*
+<option  value=f>Forward (f)
+<option  value=h>Back (h)
+</select><br>
+Torso<select name=Yt7>
+<option selected value=a>Center (a)*
+<option  value=o>Left (o)
+<option  value=e>Right (e)
+<option  value=i>Forward (i)
+<option  value=u>Back (u)
+<option  value=io>Forward left (io)
+<option  value=ie>Forward right (ie)
+<option  value=uo>Back left (uo)
+<option  value=ue>Back right (ue)
+</select><br>
+Time Between Holds<select name=Tm7>
+<option  value=p>0.05 (p)
+<option  value=t>0.11 (t)
+<option selected value=c>1.00 (c)*
+<option  value=k>1.33 (k)
+<option  value=q>1.67 (q)
+</select><br>
+Length of Hold<select name=Th7>
+<option  value=m>0.15 (m)
+<option selected value=n>0.50 (n)*
+<option  value=g>0.75 (g)
+<option  value=h>1.00 (h)
+</select><br>
+<tr><th colspan=2>Sign 8<tr><td>Dominant handshape<select name=dh8>
+<option  value=A>A
+<option  value=B>B
+<option  value=B5>B5
+<option selected value=bent-B5>Bent 5 (B5\")*
+<option  value=C>C
+<option  value=E>E
+<option  value=F>F
+<option  value=G>G
+<option  value=H>H
+<option  value=I>I
+<option  value=K>K
+<option  value=L>L
+<option  value=L3>L3
+<option  value=O>O
+<option  value=R>R
+<option  value=V>V
+<option  value=W>W
+<option  value=X>X
+<option  value=Y>Y
+<option  value=Y8>Y8
+</select><br>
+Dominant location<select name=dl8>
+<option selected value=Q>Neutral (Q)*
+<option  value=rest>Rest
+<option  value=h>Face or whole head (h)
+<option  value=u>Upper face, forehead (u)
+<option  value=m>Mid-face, eye, nose (m)
+<option  value=l>Lower face, chin (l)
+<option  value=c>Cheek/temple/ear (c)
+<option  value=k>Neck (k)
+<option  value=[>Torso ([)
+<option  value=i>Nondominant upper arm (i)
+<option  value=j>Nondominant lower arm (j)
+<option  value=as>Nondominant wrist (a/s)
+</select><br>
+Dominant orientation<select name=do8>
+<option selected value=f selected>Away from signer (f)*
+<option  value=t>Towards signer (t)
+<option  value=lt>Towards non-dominant side (&lt)
+<option  value=gt>Towards dominant side (&gt)
+<option  value=^>Upwards (^)
+<option  value=v>Downwards (v)
+</select><br>
+<td>Non-dominant handshape<select name=nh8>
+<option  value=\"A\">A
+<option  value=\"B\">B
+<option  value=B5>B5
+<option selected value=bent-B5>Bent 5 (B5\")*
+<option  value=C>C
+<option  value=E>E
+<option  value=F>F
+<option  value=G>G
+<option  value=H>H
+<option  value=I>I
+<option  value=K>K
+<option  value=L>L
+<option  value=L3>L3
+<option  value=O>O
+<option  value=R>R
+<option  value=V>V
+<option  value=W>W
+<option  value=X>X
+<option  value=Y>Y
+<option  value=Y8>Y8
+</select><br>
+Non-dominant location<select name=nl8>
+<option selected value=rest>Rest*
+<option  value=Q>Neutral (Q)
+<option  value=h>Face or whole head (h)
+<option  value=u>Upper face, forehead (u)
+<option  value=m>Mid-face, eye, nose (m)
+<option  value=l>Lower face, chin (l)
+<option  value=c>Cheek/temple/ear (c)
+<option  value=k>Neck (k)
+<option  value=[>Torso ([)
+<option  value=above>Above dominant (-)
+<option  value=below>Below dominant (_)
+<option  value=side>Side of dominant (')
+<option  value=d>Behind dominant (d)
+<option  value=q>Front of dominant (q)
+<option  value=as>Dominant wrist (a/s)
+</select><br>
+Non-dominant orientation<select name=no8>
+<option selected value=f selected>Away from signer (f)*
+<option  value=t>Towards signer (t)
+<option  value=lt>Towards non-dominant side (&lt)
+<option  value=gt>Towards dominant side (&gt)
+<option  value=^>Upwards (^)
+<option  value=v>Downwards (v)
+</select><br>
+<tr><td>Eyelids<select name=Xi8>
+<option selected value=y>Open (y)*
+<option  value=r>Squint (r)
+<option  value=l>Closed (l)
+</select><br>
+Eyebrows<select name=Xb8>
+<option selected value=t>Middle (d)*
+<option  value=p>Up (b)
+<option  value=k>Down (g)
+</select><br>
+Eyes<select name=Xe8>
+<option selected value=A>Forward (a)*
+<option  value=o>Left (o)
+<option  value=e>Right (e)
+<option  value=i>Up (i)
+<option  value=u>Down (u)
+<option  value=uo>Down Left (uo)
+<option  value=ue>Down Right (ue)
+<option  value=io>Up Left (io)
+<option  value=ie>Up Right (ie)
+</select><br>
+Mouth<select name=Xm8>
+<option selected value=n>Neutral (n)*
+<option  value=x>cs-right (x)
+<option  value=l>cs-left (j)
+<option  value=m>mm (m)
+<option  value=w>oo (w)
+<option  value=th>th (t)
+<option  value=c>cha (c)
+<option  value=s>smile (s)
+</select><br>
+<td>Head<select name=Ys8>
+<option selected value=c>Center (c)*
+<option  value=p>Right (p)
+<option  value=k>Left (k)
+<option  value=t>Up (t)
+<option  value=d>Down (d)
+<option  value=b>Tilt Right (b)
+<option  value=g>Tilt Left (g)
+</select><br>
+Neck<select name=Yk8>
+<option selected value=s>Middle (s)*
+<option  value=f>Forward (f)
+<option  value=h>Back (h)
+</select><br>
+Torso<select name=Yt8>
+<option selected value=a>Center (a)*
+<option  value=o>Left (o)
+<option  value=e>Right (e)
+<option  value=i>Forward (i)
+<option  value=u>Back (u)
+<option  value=io>Forward left (io)
+<option  value=ie>Forward right (ie)
+<option  value=uo>Back left (uo)
+<option  value=ue>Back right (ue)
+</select><br>
+Time Between Holds<select name=Tm8>
+<option  value=p>0.05 (p)
+<option  value=t>0.11 (t)
+<option selected value=c>1.00 (c)*
+<option  value=k>1.33 (k)
+<option  value=q>1.67 (q)
+</select><br>
+Length of Hold<select name=Th8>
+<option  value=m>0.15 (m)
+<option selected value=n>0.50 (n)*
+<option  value=g>0.75 (g)
+<option  value=h>1.00 (h)
+</select><br>
+</table><input type=hidden name=length value=8>
+    <input type=hidden name=handed value=r>
+<P><input type=submit value="Put it into action!"></form>
+<P>SignSynth comes with ABSOLUTELY NO WARRANTY.  This is free
+software, and you are welcome to redistribute it under certain
+conditions; see the <a href=gpl.html>GNU Public License</a> for
+details.</html>

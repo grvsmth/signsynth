@@ -1,0 +1,17 @@
+
+  Welcome to SignSynth
+  
+   Fingerspelling Module 1
+   
+   What do you want to see spelled? ____________________
+   
+   (_) Right-handed (_) Left-handed
+   
+   Speed factor _____
+   
+   Humanoid [Genny.........................................]
+   
+   Put it into action!
+   
+   SignSynth comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to
+   redistribute it under certain conditions; see the GNU Public License for details.
